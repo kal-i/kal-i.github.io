@@ -348,3 +348,15 @@ code {
 .modal-source-code:hover {
   color: var(--primary);
 }
+
+@media (max-width: 600px) {
+
+  .name,
+  .role {
+    font-size: 1.8rem;
+  }
+
+  .philosophy {
+    font-size: 0.75rem;
+  }
+}

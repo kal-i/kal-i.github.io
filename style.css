@@ -349,7 +349,25 @@ code {
   color: var(--primary);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
+
+  .name,
+  .role {
+    font-size: 2rem;
+  }
+
+  .philosophy {
+    font-size: 0.75rem;
+  }
+
+  .about-text,
+  .section-title,
+  .section-subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
 
   .name,
   .role {
@@ -357,8 +375,12 @@ code {
   }
 
   .philosophy {
-    font-size: 0.70rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
+    font-size: 0.7rem;
+  }
+
+  .about-text,
+  .section-title,
+  .section-subtitle {
+    font-size: 0.75rem;
   }
 }

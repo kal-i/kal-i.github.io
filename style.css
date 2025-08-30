@@ -25,22 +25,20 @@ body {
   padding: 1rem 2rem;
 }
 
-.name {
+.name,
+role {
   font-size: 2.55rem;
   font-weight: 800;
-  margin-bottom: .25rem;
 }
 
-.role {
-  font-size: 2.55rem;
-  font-weight: 800;
+.name {
+  margin-bottom: .25rem;
 }
 
 .info-links {
   list-style: none;
   display: flex;
   gap: 1rem;
-  padding: 0;
   margin: 1rem 0;
 }
 
@@ -71,6 +69,11 @@ body {
   color: #fff;
   font-size: 0.75rem;
   font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.cta-resume-button:hover {
+  background-color: var(--primary);
 }
 
 .philosophy {
@@ -92,7 +95,7 @@ body {
 
 .section-title {
   color: var(--primary);
-  font-size: 0.80rem;
+  font-size: 0.8rem;
   margin-bottom: 0.25rem;
 }
 
@@ -113,24 +116,20 @@ pre {
   line-height: 1.4rem;
   overflow-x: auto;
   white-space: pre;
-  /* preserve indentation */
 }
 
 .json-key {
-  background: none;
   color: var(--primary);
   font-family: 'Courier New', Courier, monospace;
 }
 
 .json-value {
-  background: none;
   color: var(--muted-rose);
   font-family: 'Courier New', Courier, monospace;
 }
 
 code {
   background: none;
-  /* prevent double background */
   color: inherit;
 }
 
@@ -144,15 +143,9 @@ code {
   padding: 1rem 0.75rem;
   border: 2px solid var(--outline);
   border-radius: 0.5rem;
-  box-sizing: border-box;
 }
 
-.project-type {
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
+.project-type,
 .project-title {
   font-size: 0.85rem;
   font-weight: 600;
@@ -166,12 +159,6 @@ code {
   letter-spacing: 0.05em;
   margin-bottom: 0.95rem;
   text-transform: uppercase;
-}
-
-.project-description {
-  margin-bottom: 1.25rem;
-  font-size: 0.85rem;
-  line-height: 1.725;
 }
 
 .project-tech-stacks {
@@ -188,15 +175,13 @@ code {
   text-transform: uppercase;
 }
 
-/* animation base */
 .reveal {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.6s ease-out;
-  will-change: transform, opacity; /* GPU hint */
+  will-change: transform, opacity;
 }
 
-/* animation when visible */
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
@@ -206,7 +191,6 @@ code {
   transition-delay: calc(var(--i, 0) * 0.15s);
 }
 
-/* disable animation if disable in user's OS */
 @media (prefers-reduced-motion: reduce) {
   .reveal {
     transition: none;
@@ -237,7 +221,7 @@ code {
   max-width: 650px;
   width: 90%;
   max-height: 70vh;
-  overflow-y: auto; /* enable scrolling */
+  overflow-y: auto;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   position: relative;
   animation: scaleIn 0.25s ease;
@@ -261,13 +245,25 @@ code {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes scaleIn {
-  from { transform: scale(0.95); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .modal-title {
@@ -287,18 +283,17 @@ code {
 }
 
 .modal-thumbnail {
-  max-width: 100%;    /* ensures it never overflows modal width */
-  height: auto;       /* keeps aspect ratio */
-  max-height: 450px;  /* adjust this to your preferred height */
+  max-width: 100%;
+  height: auto;
+  max-height: 40vh;
   display: block;
-  margin: .75rem auto; /* center and give some spacing below */
-  border-radius: 0.5rem; /* optional: rounded corners */
-  object-fit: cover;  /* keeps image proportion nicely */
+  margin: 0.75rem auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 .modal-section-feature {
   margin: 1rem auto 0.5rem;
-  margin-bottom: 0.5rem;
   color: var(--primary);
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -317,6 +312,7 @@ code {
 .modal-features li {
   font-size: 0.85rem;
   line-height: 1.725;
+  text-align: justify;
   margin-bottom: 0.5rem;
 }
 
@@ -330,7 +326,7 @@ code {
   margin-top: 1rem;
   list-style: none;
   color: var(--primary);
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -342,4 +338,9 @@ code {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  transition: color 0.2s ease;
+}
+
+.modal-source-code:hover {
+  color: var(--primary);
 }

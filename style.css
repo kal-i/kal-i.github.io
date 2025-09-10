@@ -80,16 +80,6 @@ body {
   background-color: var(--primary);
 }
 
-.philosophy {
-  margin-bottom: 0.85rem;
-  font-size: 0.85rem;
-  font-weight: 500;
-}
-
-.keyword {
-  color: var(--primary);
-}
-
 .about-text {
   font-size: 0.85rem;
   letter-spacing: 0.05em;
@@ -356,10 +346,6 @@ code {
     font-size: 2rem;
   }
 
-  .philosophy {
-    font-size: 0.75rem;
-  }
-
   .about-text,
   .section-title,
   .section-subtitle {
@@ -372,10 +358,6 @@ code {
   .name,
   .role {
     font-size: 1.8rem;
-  }
-
-  .philosophy {
-    font-size: 0.7rem;
   }
 
   .about-text,

@@ -9,13 +9,8 @@ export function renderProjects() {
     projectItem.dataset.index = index; // link card -> modal later
 
     projectItem.innerHTML = `
-    <h3 class="project-type">${project.type}</h3>
     <h3 class="project-title">${project.title}</h3>
-    <p class="project-date">${project.date}</p>
-    ${project.tech && project.tech.length
-        ? `<ul class="project-tech-stacks">${project.tech.map(t => `<li>${t}</li>`).join("")}`
-        : ""
-      }
+    <p class="project-description">${project.description}<p/>
   `;
 
     projectList.appendChild(projectItem);

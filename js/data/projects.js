@@ -1,5 +1,18 @@
 export const projects = [
   {
+    type: "Full-stack (Exploration)",
+    title: "sanctum",
+    date: "JUL 2025 - PRESENT",
+    thumbnail: 'assets/images/sanctum.png',
+    description: "An AI-powered app that guides you in understanding and reflecting on your emotions.",
+    features: [
+      {},
+      {},
+    ],
+    tech: ["Spring Boot (Java)", "Fluter (Dart)", "Bloc", "Clean Architecture"],
+    source_code: "https://github.com/kal-i/sanctum_backend",
+  },
+  {
     type: "Full-stack (Capstone)",
     title: "QR Code Inventory Management and Item Tracking System",
     date: "MAR 2024 - JUN 2025",
@@ -27,7 +40,7 @@ export const projects = [
         { profile: "View user information such as name, position, and department." },
       ],
     },
-    tech: ["Flutter (Dart)", "Bloc", "Dart Frog", "PostgreSQL"],
+    tech: ["Flutter (Dart)", "Bloc", "Dart Frog", "PostgreSQL", "Clean Architecture"],
     source_code: {
       desktop: "https://github.com/kal-i/qrims_desktop.git",
       mobile: "https://github.com/kal-i/qrims_mobile.git",
@@ -38,7 +51,7 @@ export const projects = [
     title: "Fi.nance Tracking API",
     date: "MAR - APR 2025",
     thumbnail: "assets/images/authMiddleware.ts.png",
-    description: "A RESTful finance tracking API built with Node.js, implementing JWT-based authentication, account and transaction management, and follows a layered architecture for simplicity and scalability.",
+    description: "A RESTful finance tracking API built with Node.js, featuring JWT authentication and a layered architecture for scalability.",
     features: [
       { authentication: "Secure login with JWT authentication and session trakcing." },
       { account: "Accounts for managing and holding user funds." },
@@ -64,5 +77,18 @@ export const projects = [
     ],
     tech: ["C#", "MS SQL Server"],
     source_code: "https://github.com/kal-i/loan-management-system.git",
+  },
+  {
+    type: "Full-stack (Mini)",
+    title: "vault_cli",
+    date: "SEP 2025",
+    thumbnail: 'assets/images/vault_cli.png',
+    description: "A simple offline, CLI-inspired password vault.",
+    features: [
+      {},
+      {},
+    ],
+    tech: ["Flutter (Dart)", "Drift ORM", "Flutter Secure Storage", "Cryptography", "Bloc", "Clean Architecture"],
+    source_code: "https://github.com/kal-i/vault_cli.git",
   },
 ];
